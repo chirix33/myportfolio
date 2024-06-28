@@ -104,15 +104,30 @@ ul.social-links {
 }
 
 a {
-    color: #93B1A6;
+    color:  wheat;
     text-decoration: none;
     transition: .2s;
 }
 
-a:hover,
-h2 {
-    color: wheat;
+a:not(.menu-link) {
+    padding-bottom: 1px;
+    border-bottom: 2px solid wheat;
 }
+
+a:hover, 
+h2 {
+    color: #93B1A6;
+    border-bottom: none;
+}
+
+ul.social-links a {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* h2 {
+    color: wheat;
+} */
 
 div.about ul > li {
     width: 30px;
