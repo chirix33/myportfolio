@@ -224,14 +224,10 @@ span.divider {
     .body-wrapper {
         flex-direction: column;
     }
-
-    /* .listing-projects > li {
-        width: 45%;
-    } */
 }
 
 @media screen and (max-width: 800px) {
     .body-wrapper > div {
-        max-height: auto;
+        max-height: 100%;
     }
 }
