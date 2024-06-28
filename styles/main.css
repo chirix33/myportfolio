@@ -228,6 +228,6 @@ span.divider {
 
 @media screen and (max-width: 800px) {
     .body-wrapper > div {
-        min-height: auto;
+        max-height: 100%;
     }
 }
