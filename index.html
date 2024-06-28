@@ -91,67 +91,42 @@
                 <h2>Projects</h2>
                 <ul class="listing-projects" style="margin-top: 50px;">
                     <li>
+                        <div style="background-image: url('images/project-6.png'); background-position: center;"></div>
+                        <span class="title">Exnotes</span>
+                        <p class="content">A note-keeper for books read. <a href="https://exnotes.onrender.com/" target="_blank">Go to the app</a>.</p>
+                    </li>
+                    <span class="divider"></span>
+                    <li>
                         <div style="background-image: url('images/project-5.png');"></div>
                         <span class="title">Pokebook</span>
-                        <p class="content">A ReactJS Pokemon Web App for finding details on all the Pokemons. <a href="https://funny-baklava-823a63.netlify.app/" target="_blank">Check it out here</a></p>
+                        <p class="content">A ReactJS Pokemon Web App for finding details on all the Pokemons. <a href="https://funny-baklava-823a63.netlify.app/" target="_blank">Check it out here</a>.</p>
                     </li>
+                    <span class="divider"></span>
                     <li>
                         <div style="background-image: url('images/project-1.png');"></div>
                         <span class="title">E-Voting Web App</span>
-                        <p class="content">A Web App that can be used for any form of voting. Reports are generated</p>
+                        <p class="content">A Web App that can be used for any form of voting. Reports are generated.</p>
                     </li>
                     <span class="divider"></span>
                     <li>
                         <div style="background-image: url('images/project-2.png');"></div>
                         <span class="title">ExCommerce</span>
-                        <p class="content">A Shopping site for business owners. Each business owner sets up their own "store"</p>
+                        <p class="content">A Shopping site for business owners. Each business owner sets up their own "store".</p>
                     </li>
                     <span class="divider"></span>
                     <li>
                         <div style="background-image: url('images/project-3.png');"></div>
                         <span class="title">ExPoster</span>
-                        <p class="content">A simple blog web app</p>
+                        <p class="content">A simple blog web app.</p>
                     </li>
                     <li>
                         <div style="background-image: url('images/project-4.png');"></div>
                         <span class="title">Knowords</span>
-                        <p class="content">Web app to get information about almost every English word (yeah, right...)</p>
+                        <p class="content">Web app to get information about almost every English word (yeah, right...) <a href="https://knowords.onrender.com" target="_blank">Here is the project</a>.</p>
                     </li>
                 </ul>
             </section>
         </div>
     </div>
-    <script src="scripts/jquery-3.7.1.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Cache the social links
-            var $socialLinks = $('.menu-link');
-            
-            // Add a highlight class to the social link that is currently in view
-            // Handle the scroll event
-            $(".content").scroll(function() {
-                console.log("Scrolled!");
-                var scrollPosition = $(this).scrollTop();
-
-                // Loop through each social link
-                $socialLinks.each(function() {
-                    $(this).removeClass('highlight');
-
-                    // Get the target section's ID from the href attribute
-                    var targetId = $(this).attr('href').slice(1);
-                    var $targetSection = $('#' + targetId);
-
-                    // Check if the target section is in view
-                    if (scrollPosition >= $targetSection.offset().top) {
-                        // Highlight the social link
-                        $(this).addClass('highlight');
-                    } else {
-                        // Remove the highlight from the social link
-                        $(this).removeClass('highlight');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
